@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulario Inscripción</title>
+        <style>
+            header{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            legend{ 
+                font-family: Arial, Helvetica, sans-serif;}
+        </style>
+    </head>
+    <body style="background-color: rgba(128, 128, 128, 0.623);">
+        <header style="background-color: rgba(245, 245, 245, 0.637);margin-left: 80px; margin-right: 80px;"><br>
+            <h1 style="text-align: center;">Formulario de incripción</h1>
+            <h3 style="text-align: center;">Por favor, rellene el formulario con sus datos personales</h3>
+            <h4 style="text-align: center;">Autor: Rubén García Cortés</h4>
+        </header>
+        <main style="margin-left: 155px; margin-right: 155px; background-color: rgb(158, 146, 146);">
+            <img src="./img/formulario.jpg" style="float: right; margin-top: 130px; margin-right: 20px;">
+            <section>
+                <fieldset style="width: 65%;">
+                <legend style="font-style: italic; font-size: 20px;">Tus datos personales:</legend>
+                <form>
+                <br>
+                    <label for="fname">Nombre</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Itroduzca su nombre"><br>
+                    <label for="lname">Apellidos </label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Introduzca apellido"><br>
+                    <label for="datemin">Fecha de nacimiento:</label><br>
+                    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>             
+                    <p>Por favor su sexo:</p>
+                    <input type="radio" id="male" name="genero" value="Hombre">
+                    <label for="male">Hombre</label><br>
+                    <input type="radio" id="female" name="genero" value="Mujer">
+                    <label for="female">Mujer</label><br>
+                    <input type="radio" id="other" name="genero" value="Otros">
+                    <label for="other">Otros</label><br><br>
+                    <label for="dname">Dirección</label><br>
+                    <input type="text" id="dname" name="dname" placeholder="Introduzca su dirección"><br>
+                    <label for="text">Población</label><br>
+                    <input type="text" id="pname" name="pname" placeholder="Introduzca la población de residencia"><br><br><br>
+                    <input type="submit" value="Submit">
+                    <button onclick="myFunction()">Restablecer</button>
+                    <script>
+                    function myFunction() {
+                      alert("¿Estás seguro de que quieres restablecer?");
+                    }
+                    </script>
+                </legend>
+                </fieldset>
+            </section>
+            <br>       
+            <br>
+            <section>
+                <fieldset style="width: 65%;">
+                <legend style="font-style: italic; font-size: 20px;">Otros datos:</legend><br>
+                <form>
+                    <label>Vehiculo en propiedad</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Bicicleta</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Coche</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Moto</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle4"> Barco</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle5"> Patinete</label><br>
+                    <label for="favcolor">Selecciona tu color favorito:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+                    <label for="uname">Introduza su usuario</label><br>
+                    <input type="text" id="uname" name="uname" placeholder="Introduzca un usuario"><br>
+                    <label for="pwd">Introduzca su contraseña:</label><br>            
+                    <input type="password" id="pwd" name="pwd" placeholder="Introduzca una contraseña"><br><br><br>
+                    <input type="submit" value="Submit">
+                    <button onclick="myFunction()">Restablecer</button>
+                    <script>
+                    function myFunction() {
+                      alert("¿Estás seguro de que quieres restablecer?");
+                    }
+                    </script>
+                </form>          
+                </form>
+                </fieldset>
+            </section>
+    </main>
+    </body>
+</html>  
+
+
+
